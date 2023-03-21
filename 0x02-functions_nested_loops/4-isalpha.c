@@ -1,15 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _isalpha - function that checks for alphabetic character.
- * @c: The input character to check
- * Return: int.
+ * _isalpha - check the code for ALX School students.
+ *
+ * @c: is c an integer argument
+ *
+ * Return: Always 0.
  */
 
 int _isalpha(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+
+	if (c >= 97 && c <= 122)
+	{
 		return (1);
-	else
-		return (0);
+	}
+	else if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	return (0);
 }
